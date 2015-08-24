@@ -1,0 +1,26 @@
+//
+//  BZToolBox.pch
+//  工具块
+//
+//  Created by 尚承教育 on 15/8/14.
+//  Copyright (c) 2015年 SSBun. All rights reserved.
+//
+
+#ifndef ____BZToolBox_pch
+#define ____BZToolBox_pch
+
+#define BZ @"ijkl"
+
+#import "BZHttp.h"
+#import "UIView+Extension.h"
+#import "MJExtension.h"
+
+#define BZColor(r,g,b,a)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+#define BZRandomColor BZColor((arc4random()%255),(arc4random()%255),(arc4random()%255),1)
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#endif
+
+
