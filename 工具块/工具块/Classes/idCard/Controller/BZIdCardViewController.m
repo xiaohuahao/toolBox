@@ -29,7 +29,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self addSwipBackGestureGecongnizer];
+    
     [self setUpUI];
     [self setUpHistoryRecodView];
 }
