@@ -15,6 +15,7 @@
 #import "UMSocialQQHandler.h"
 #import "UMSocialWechatHandler.h"
 #import "UMSocialSinaHandler.h"
+#import "APService.h"
 
 @interface AppDelegate ()
 
@@ -43,6 +44,7 @@
     [self.window makeKeyAndVisible];
     [UIApplication sharedApplication].statusBarHidden = YES;
     
+    
     // 设置友盟的AppKey
     [UMSocialData setAppKey:@"55d83a2067e58ea5890053c7"];
     
@@ -53,13 +55,22 @@
     [UMSocialWechatHandler setWXAppId:@"wxe2a367623e96ad91" appSecret:@"ee481425ddbbc0b5548fe7c808b541db" url:@"http://www.umeng.com/social"];
     // 配置新浪分享SSO
     [UMSocialSinaHandler openSSOWithRedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+    
+    // 接收远程推送
+    [APService
+     registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
+                                         UIUserNotificationTypeSound |
+                                         UIUserNotificationTypeAlert)
+     categories:nil];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
+
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.

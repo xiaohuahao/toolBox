@@ -106,6 +106,12 @@
 		A6B697411B80661300C9BC06 /* BZBaseSearchEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B697401B80661300C9BC06 /* BZBaseSearchEnum.m */; };
 		A6B697441B808E6C00C9BC06 /* BZWeatherCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B697431B808E6C00C9BC06 /* BZWeatherCityModel.m */; };
 		A6B6974B1B809D8D00C9BC06 /* BZIdCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B6974A1B809D8D00C9BC06 /* BZIdCardViewController.m */; };
+		A6D012F01B8EFCC70017DEFF /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012EF1B8EFCC70017DEFF /* libPushSDK-1.8.5.a */; settings = {ASSET_TAGS = (); }; };
+		A6D012F21B8EFCFC0017DEFF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012F11B8EFCFC0017DEFF /* CFNetwork.framework */; };
+		A6D012F41B8EFD050017DEFF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012F31B8EFD050017DEFF /* CoreFoundation.framework */; };
+		A6D012F61B8EFD400017DEFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012F51B8EFD400017DEFF /* Foundation.framework */; };
+		A6D012F81B8EFD4A0017DEFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012F71B8EFD4A0017DEFF /* UIKit.framework */; };
+		A6D012FA1B8EFE220017DEFF /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D012F91B8EFE220017DEFF /* PushConfig.plist */; settings = {ASSET_TAGS = (); }; };
 		A6F285401B789027008C879B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F2853F1B789027008C879B /* main.m */; };
 		A6F2854B1B789027008C879B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F2854A1B789027008C879B /* Images.xcassets */; };
 		A6F2854E1B789027008C879B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F2854C1B789027008C879B /* LaunchScreen.xib */; };
@@ -319,6 +325,13 @@
 		A6B697431B808E6C00C9BC06 /* BZWeatherCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZWeatherCityModel.m; sourceTree = "<group>"; };
 		A6B697491B809D8D00C9BC06 /* BZIdCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZIdCardViewController.h; sourceTree = "<group>"; };
 		A6B6974A1B809D8D00C9BC06 /* BZIdCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZIdCardViewController.m; sourceTree = "<group>"; };
+		A6D012EE1B8EFCC70017DEFF /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
+		A6D012EF1B8EFCC70017DEFF /* libPushSDK-1.8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.5.a"; sourceTree = "<group>"; };
+		A6D012F11B8EFCFC0017DEFF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A6D012F31B8EFD050017DEFF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A6D012F51B8EFD400017DEFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6D012F71B8EFD4A0017DEFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6D012F91B8EFE220017DEFF /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
 		A6F2853A1B789027008C879B /* 工具块.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "工具块.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F2853E1B789027008C879B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6F2853F1B789027008C879B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -342,19 +355,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65D27F11B88784800D6C1CD /* Security.framework in Frameworks */,
+				A6D012F81B8EFD4A0017DEFF /* UIKit.framework in Frameworks */,
+				A6D012F61B8EFD400017DEFF /* Foundation.framework in Frameworks */,
+				A65D27F51B88786800D6C1CD /* CoreGraphics.framework in Frameworks */,
+				A65D27EF1B88773200D6C1CD /* SystemConfiguration.framework in Frameworks */,
+				A65D27F91B88787E00D6C1CD /* CoreTelephony.framework in Frameworks */,
+				A6D012F41B8EFD050017DEFF /* CoreFoundation.framework in Frameworks */,
+				A6D012F21B8EFCFC0017DEFF /* CFNetwork.framework in Frameworks */,
 				A65D28131B89731800D6C1CD /* libWeChatSDK.a in Frameworks */,
+				A6D012F01B8EFCC70017DEFF /* libPushSDK-1.8.5.a in Frameworks */,
 				A65D27FD1B88788F00D6C1CD /* libz.dylib in Frameworks */,
 				A65D28041B8879B800D6C1CD /* TencentOpenAPI.framework in Frameworks */,
 				A65D27FB1B88788700D6C1CD /* libstdc++.dylib in Frameworks */,
 				A65D28121B89731800D6C1CD /* libSocialWechat.a in Frameworks */,
 				A65D28031B8879B800D6C1CD /* libSocialQQ.a in Frameworks */,
-				A65D27F91B88787E00D6C1CD /* CoreTelephony.framework in Frameworks */,
 				A65D27F71B88787500D6C1CD /* libsqlite3.dylib in Frameworks */,
 				A65D282A1B89856800D6C1CD /* libSocialSina.a in Frameworks */,
-				A65D27F51B88786800D6C1CD /* CoreGraphics.framework in Frameworks */,
-				A65D27EF1B88773200D6C1CD /* SystemConfiguration.framework in Frameworks */,
 				A65D27F31B88785300D6C1CD /* libiconv.dylib in Frameworks */,
-				A65D27F11B88784800D6C1CD /* Security.framework in Frameworks */,
 				A65D27E31B88705300D6C1CD /* libUMSocial_Sdk_4.2.3.a in Frameworks */,
 				A65D27E41B88705300D6C1CD /* libUMSocial_Sdk_Comment_4.2.3.a in Frameworks */,
 			);
@@ -563,6 +581,10 @@
 		A65D27C51B88703400D6C1CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6D012F71B8EFD4A0017DEFF /* UIKit.framework */,
+				A6D012F51B8EFD400017DEFF /* Foundation.framework */,
+				A6D012F31B8EFD050017DEFF /* CoreFoundation.framework */,
+				A6D012F11B8EFCFC0017DEFF /* CFNetwork.framework */,
 				A65D27FC1B88788F00D6C1CD /* libz.dylib */,
 				A65D27FA1B88788700D6C1CD /* libstdc++.dylib */,
 				A65D27F81B88787E00D6C1CD /* CoreTelephony.framework */,
@@ -795,6 +817,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A6D012ED1B8EFCC70017DEFF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A6D012EE1B8EFCC70017DEFF /* APService.h */,
+				A6D012EF1B8EFCC70017DEFF /* libPushSDK-1.8.5.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		A6F285311B789026008C879B = {
 			isa = PBXGroup;
 			children = (
@@ -831,6 +862,7 @@
 				A6F2853E1B789027008C879B /* Info.plist */,
 				A6B4D5AF1B7DECFA00144172 /* BZToolBox.pch */,
 				A6F2853F1B789027008C879B /* main.m */,
+				A6D012F91B8EFE220017DEFF /* PushConfig.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -951,6 +983,7 @@
 		A6F2856C1B7891B7008C879B /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				A6D012ED1B8EFCC70017DEFF /* lib */,
 				A65D27C61B88705300D6C1CD /* UMSocial_Sdk_4.2.3 */,
 				A65D27FE1B8879B800D6C1CD /* TencentOpenAPI */,
 				A65D280C1B89731800D6C1CD /* Wechat */,
@@ -1084,6 +1117,7 @@
 				A655C0A81B81C20200A8D6E6 /* MJRefresh.bundle in Resources */,
 				A655C0241B81627100A8D6E6 /* MBProgressHUD.bundle in Resources */,
 				A6F2854B1B789027008C879B /* Images.xcassets in Resources */,
+				A6D012FA1B8EFE220017DEFF /* PushConfig.plist in Resources */,
 				A65D27E81B88705300D6C1CD /* UMShareEditViewController.xib in Resources */,
 				A65D27EB1B88705300D6C1CD /* UMSnsAccountViewController.xib in Resources */,
 				A65D27E61B88705300D6C1CD /* UMSCommentInputController.xib in Resources */,
@@ -1244,6 +1278,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenru wei (YY9PBXC9J6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1288,6 +1323,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenru wei (YY9PBXC9J6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1300,6 +1336,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1317,6 +1354,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/工具块/BZToolBox.pch";
 				INFOPLIST_FILE = "工具块/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1325,8 +1363,11 @@
 					"$(PROJECT_DIR)/工具块/Classes/Main/Third/Wechat",
 					"$(PROJECT_DIR)/工具块/Classes/Main/Third/SinaSSO",
 					"$(PROJECT_DIR)/工具块/Classes/Main/Third/Sina",
+					"$(PROJECT_DIR)/工具块/Classes/Main/Third/lib",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/工具块/Classes/Main/Third/lib";
 			};
 			name = Debug;
 		};
@@ -1342,6 +1383,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/工具块/BZToolBox.pch";
 				INFOPLIST_FILE = "工具块/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1350,8 +1392,11 @@
 					"$(PROJECT_DIR)/工具块/Classes/Main/Third/Wechat",
 					"$(PROJECT_DIR)/工具块/Classes/Main/Third/SinaSSO",
 					"$(PROJECT_DIR)/工具块/Classes/Main/Third/Sina",
+					"$(PROJECT_DIR)/工具块/Classes/Main/Third/lib",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/工具块/Classes/Main/Third/lib";
 			};
 			name = Release;
 		};
