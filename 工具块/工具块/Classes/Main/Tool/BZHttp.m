@@ -48,9 +48,8 @@
     
     __block  id myData;
     [NSURLConnection sendAsynchronousRequest:urlRequest queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        myData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         if (connectionError != nil || myData == nil) {
-            [MBProgressHUD showError:@"网络故障！"];
+            
             if (failure) {
                 failure(connectionError);
             }
@@ -58,6 +57,7 @@
         else
         {
             if (success) {
+                myData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                 success(myData);
             }
         }

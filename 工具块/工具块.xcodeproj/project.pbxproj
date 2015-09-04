@@ -106,12 +106,12 @@
 		A6B697411B80661300C9BC06 /* BZBaseSearchEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B697401B80661300C9BC06 /* BZBaseSearchEnum.m */; };
 		A6B697441B808E6C00C9BC06 /* BZWeatherCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B697431B808E6C00C9BC06 /* BZWeatherCityModel.m */; };
 		A6B6974B1B809D8D00C9BC06 /* BZIdCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B6974A1B809D8D00C9BC06 /* BZIdCardViewController.m */; };
-		A6D012F01B8EFCC70017DEFF /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012EF1B8EFCC70017DEFF /* libPushSDK-1.8.5.a */; settings = {ASSET_TAGS = (); }; };
+		A6D012F01B8EFCC70017DEFF /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012EF1B8EFCC70017DEFF /* libPushSDK-1.8.5.a */; };
 		A6D012F21B8EFCFC0017DEFF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012F11B8EFCFC0017DEFF /* CFNetwork.framework */; };
 		A6D012F41B8EFD050017DEFF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012F31B8EFD050017DEFF /* CoreFoundation.framework */; };
 		A6D012F61B8EFD400017DEFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012F51B8EFD400017DEFF /* Foundation.framework */; };
 		A6D012F81B8EFD4A0017DEFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D012F71B8EFD4A0017DEFF /* UIKit.framework */; };
-		A6D012FA1B8EFE220017DEFF /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D012F91B8EFE220017DEFF /* PushConfig.plist */; settings = {ASSET_TAGS = (); }; };
+		A6D012FA1B8EFE220017DEFF /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D012F91B8EFE220017DEFF /* PushConfig.plist */; };
 		A6F285401B789027008C879B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F2853F1B789027008C879B /* main.m */; };
 		A6F2854B1B789027008C879B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F2854A1B789027008C879B /* Images.xcassets */; };
 		A6F2854E1B789027008C879B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F2854C1B789027008C879B /* LaunchScreen.xib */; };
@@ -1296,7 +1296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1335,7 +1335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;

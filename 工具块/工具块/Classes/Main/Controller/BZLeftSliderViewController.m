@@ -111,7 +111,6 @@
         CGFloat leftTabCenterX = kLeftCenterX + ((kScreenWidth - kMainPageDistance) * 0.5 - kLeftCenterX) * (panGes.view.x / (kScreenWidth - kMainPageDistance));
         
         CGFloat leftScale = kLeftScale + (1 - kLeftScale) * (panGes.view.x / (kScreenWidth - kMainPageDistance));
-        NSLog(@"%f",leftScale);
         
         self.leftTableView.center = CGPointMake(leftTabCenterX, kScreenHeight * 0.5);
         self.leftTableView.transform = CGAffineTransformScale(CGAffineTransformIdentity, leftScale, leftScale);

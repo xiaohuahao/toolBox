@@ -33,7 +33,7 @@
 {
     BZBTGirlFallsMainView *fallsView = [[BZBTGirlFallsMainView alloc]init];
     fallsView.frame = self.view.bounds;
-    self.fallsView = fallsView;
+    self.fallsView  = fallsView;
     [self.view addSubview:fallsView];
 }
 
@@ -45,14 +45,12 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.inRefresh = NO;
     });
-
     [BZHttp httpGetWithUrl:@"http://apis.baidu.com/txapi/mvtp/meinv" andParams:param andSuccess:^(id result) {
-        NSLog(@"%@",result);
         NSDictionary *dictDatas = result;
-//        NSMutableArray *imageDatas = [NSMutableArray array];
-//        NSOperationQueue *operationQueue = [[NSOperationQueue alloc]init];
+        dispatch_group_t group  = dispatch_group_create();
         [dictDatas enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
             if ([self isPureInt:key]) {
+                dispatch_group_enter(group);
                 BZBTGirlImageModel *imageModel = [BZBTGirlImageModel objectWithKeyValues:obj];
                 NSURLRequest *request = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString:imageModel.picUrl] cachePolicy:0 timeoutInterval:5];
 
@@ -62,9 +60,13 @@
                         NSLog(@"--------");
                         [self.fallsView addImageArr:@[image]];
                     }
+                    dispatch_group_leave(group);
                 }];
             }
         }];
+        dispatch_group_notify(group, dispatch_get_global_queue(0, 0), ^{
+            [MBProgressHUD showMessage:@"晃动手机加载更多!"];
+        });
     } andFailure:^(NSError *error) {
         self.inRefresh = NO;
         [MBProgressHUD showError:@"加载数据失败！"];
